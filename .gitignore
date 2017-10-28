@@ -1,9 +1,9 @@
-Spirit-Trainer/[Ll]ibrary/
-Spirit-Trainer/[Tt]emp/
-Spirit-Trainer/[Oo]bj/
-Spirit-Trainer/[Bb]uild/
-Spirit-Trainer/[Bb]uilds/
-Spirit-Trainer/Assets/AssetStoreTools*
+./[Ll]ibrary/
+./[Tt]emp/
+./[Oo]bj/
+./[Bb]uild/
+./[Bb]uilds/
+./Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
