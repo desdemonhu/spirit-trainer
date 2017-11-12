@@ -6,10 +6,12 @@ using UnityEngine;
 public class Ghost : MonoBehaviour {
 
     Rigidbody rigidBody;
+    AudioSource thrusters;
 
 	// Use this for initialization
 	void Start () {
         rigidBody = GetComponent<Rigidbody>();
+        thrusters = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +24,14 @@ public class Ghost : MonoBehaviour {
         if (Input.GetKey(KeyCode.Space))
         {
             rigidBody.AddRelativeForce(Vector3.up);
+            if (!thrusters.isPlaying)
+            {
+                thrusters.Play();
+            }
+            
+        } else
+        {
+            thrusters.Stop();
         }
         if (Input.GetKey(KeyCode.A))
         {
